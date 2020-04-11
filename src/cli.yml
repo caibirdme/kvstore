@@ -1,0 +1,23 @@
+name: kvs
+version: "0.0.1"
+author: caibirdme <englanq@126.com>
+about: really simple kv storage
+subcommands:
+  - set:
+      args:
+        - KEY:
+            help: specify the key
+            required: true
+        - VALUE:
+            help: set the value
+            required: true
+  - get:
+      args:
+        - KEY:
+            help: specify the key to query
+            required: true
+  - rm:
+      args:
+        - KEY:
+            help: specify the key to delete
+            required: true
